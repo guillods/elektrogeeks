@@ -12,7 +12,7 @@
 
 <body>
     <header>
-        <section>
+        <section id="headerNormal">
             <div class="headerFlexPart1">
                 <span><a class="logo" href="../index.html"><img id="Inicio" src="../Media/Logo1.png" alt="Logo" /></a></span>
                 <span class="nombreTienda">ELEKTROGEEKS</span>
@@ -44,13 +44,34 @@
                     <img src="../Media/shopping cart.svg" alt="Carrito de Compras" class="imgEncabezado"></div>
             </div>
         </section>
-    </header>
+        <section id="headerMovil">
+            <div class="headerFlexPart1">
+                <nav>
+                    <ul class="padre">
+                        <li> <img class="imgMenu" src="../Media/Menu.svg" class="active">
+                            <ul class="madre">
+                                <li><a href="category1.html"> Audio </a></li>
+                                <li><a href="category2.html"> Video </a></li>
+                                <li><a href="category3.html"> Computación </a></li>
+                                <li><a href="category4.html"> Videojuegos </a></li>
+                                <li><a href="category5.html"> Otros </a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
 
+                <input type="text" name="busqueda" placeholder="Encuentra lo que buscas">
+                <span><a href="../index.html"><img class="logo" id="Inicio" src="../Media/Logo1.png" alt="Logo" /></a></span>
+            </div>
+            <div class="headerFlexPart2">    
+            </div>
+        </section>
+    </header>
     <main>
         <br><h1>Computación</h1><br>
         <div id="gridAreas">
             <div>
-                <aside>
+                <aside class="aside">
                     <div>Filtrar por:</div><br>
                     <p>Filtro 1</p>
                     <input type="checkbox" name="opcion1" value="1">
@@ -105,7 +126,10 @@
             </div>
     </div>
     </main>
-
+    <aside id="sidebarMovil">
+        <img src="../Media/user.svg" alt="Usuario" class="imgEncabezado">
+        <img src="../Media/shopping cart.svg" alt="Carrito de Compras" class="imgEncabezado">
+    </aside>
 </body>
 <hr>
 <footer>

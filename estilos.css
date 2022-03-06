@@ -32,7 +32,7 @@ footer {
 }
 
 .nombreTienda {
-    margin-left: 2%;
+    margin-left: 3%;
     color: #8cbb51;
     font-weight: bold;
     font-size: 150%;
@@ -147,7 +147,7 @@ li ul li:hover {
     width: 99%;
 }
 
-aside {
+.aside {
     padding: 1vw;
     margin: 0 5% 0 5%;
     border: solid 1px #054756;
@@ -168,18 +168,17 @@ button {
 .segundoTitulo {
     background-color: #8cbb51;
     text-align: center;
-    font-size: 100%;
+    font-size: 1rem;
     color: #054756;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     border: solid #d3d3d3 2px;
 }
 
 .imgLarge {
-    width: 93vw;
+    width: 97%;
     border-radius: 10%;
     padding: 1%;
-    border: solid #054756;
-    margin: 1%;
+    margin: 0;
 }
 
 .tercerTitulo {
@@ -210,6 +209,7 @@ h2 {
     text-align: center;
 }
 
+
 h5 {
     text-align: left;
     font-size: 12px;
@@ -225,7 +225,7 @@ h5 {
 }
 
 
-Aside ul li {
+aside ul li {
     width: 100px;
     height: 25px;
     background-color: #3d3d3d;
@@ -245,7 +245,7 @@ article {
     padding: 10px;
 }
 
-iframe {
+.iframeIndex {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -384,6 +384,14 @@ aside {
     grid-area: contenido;
 }
 
+/*Oculta secciones para movil*/
+#headerMovil {
+    display: none;
+}
+#sidebarMovil {
+    display: none;
+}
+
 
 /* TABLET */
 @media (min-width: 481px) and (max-width: 1023px) {
@@ -427,7 +435,20 @@ aside {
         column-gap: 1%;
         row-gap: 0;
     }
+    .nombreTienda {
+        font-size: 1rem;
+        margin-left: 5%;
+    }
+    .segundoTitulo,.tercerTitulo {
+        font-size: 3vw;
+    }
 
+    .logo {
+        width: 15vw;
+    }
+    footer {
+        display: none;
+    }
     .categorias {
         display: none;
     }
@@ -449,11 +470,39 @@ aside {
         min-width: 150px;
     }
 
+    .flexMenuInicial {
+        display: none;
+    }
+
     .flexProdButton {
         min-width: 50%;
         justify-content: center;
         align-items: center;
         align-content: center;
+    }
+    .headerFlexPart2 {
+        width: 98vw;
+    }
+    #headerNormal {
+        display: none;
+    }
+    #headerMovil {
+        width: 100%;
+        display: block;
+    }
+    aside img {
+        height: 85%;
+    }
+    #sidebarMovil {
+        background-color: #d3d3d3;
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+        align-items: center;   
+        height: 10vw;
+        width: 100%;
+        bottom: 0;
+        position: sticky;
     }
 
 }
