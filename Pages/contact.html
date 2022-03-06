@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../estilos.css">
+</head>
+
+<body>
+    <header>
+        <section>
+            <div class="headerFlexPart1">
+                <span><a class="logo" href="../index.html"><img id="Inicio" src="../Media/Logo1.png" alt="Logo" /></a></span>
+                <span class="nombreTienda">ELEKTROGEEKS</span>
+                <nav class="flexMenuInicial">
+                    <span><a class="menuInicial" href="../index.html">Inicio</a></span>
+                    <span><a class="menuInicial" href="../Pages/products.html">Productos</a></span>
+                    <span><a class="menuInicial" href="../Pages/company.html">Nosotros</a></span>
+                    <span><a class="menuInicial" href="../Pages/contact.html">Contacto</a></span>
+                </nav>
+            </div>
+            <div class="headerFlexPart2">
+                <nav>
+                    <ul class="padre">
+                        <li> <img class="imgMenu" src="../Media/Menu.svg" class="active">
+                            <ul class="madre">
+                                <li><a href="category1.html"> Audio </a></li>
+                                <li><a href="category2.html"> Video </a></li>
+                                <li><a href="category3.html"> Computación </a></li>
+                                <li><a href="category4.html"> Videojuegos </a></li>
+                                <li><a href="category5.html"> Otros </a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <span class="categorias">Categorias</span>
+                <input type="text" name="busqueda" placeholder="Encuentra lo que buscas">
+                <div class="imgFlexencabezado">
+                    <img src="../Media/user.svg" alt="Usuario" class="imgEncabezado">
+                    <img src="../Media/shopping cart.svg" alt="Carrito de Compras" class="imgEncabezado"></div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <br>
+        <h2>Escríbenos</h2><br>
+        <!--Formulario-->
+        <form id="form" action="">
+            <br>
+            <label for="apellido"> Apellido:</label><br>
+            <input type="text" name="apellido" placeholder="Escribe tu apellido"><br>
+            <label for="Tipodocumento"> Tipo de documento</label><br>
+            <select name="Tipodocumento" id="">
+                <option value="CC"> Cédula de Ciudadania </option>
+                <option value="TC"> Tarjeta de Identidad </option>
+                <option value="CE"> Cédula de Extranjería </option>
+            </select><br>
+            <label for="numeroDoc"> Número de documento: </label><br>
+            <input type="text" name="numeroDoc" placeholder="Escribe tu número de documento"><br>
+            <label for="correo"> Email: </label><br>
+            <input type="email" name="correo" placeholder="Escribe tu correo"><br>
+            <label for="telefono"> Teléfono: </label><br>
+            <input type="tel" name="telefono" placeholder="Escribe tu número de teléfono"><br>
+            <label for="fecha"> Fecha de caso: </label><br>
+            <input type="date" name="fecha" placeholder=""><br>
+            <label for="genero">Mi género es:</label><br>
+            <select name="genero" id="">
+                <option value="Male"> Masculino </option>
+                <option value="Fame"> Femenino </option>
+                <option value="NoBin"> No Binario </option>
+                <option value="NoMen"> Prefiero no mencionarlo </option>
+            </select><br>
+            <label for="archivo">Adjunta soportes</label><br>     
+            <input type="file" name="archivo"><br>
+            <label for="comentario"> Comentarios: </label><br>
+            <textarea name="comentario" id="" cols="35" rows="12"></textarea><br>
+            <label for="acepta"> Acepta las politicas de tratamiento de datos: </label><br>
+            <input type="checkbox" name="acepta" value="1">
+            <br>
+            <input type="submit" value="Enviar Formulario">
+        </form>
+    </main>
+    <hr>
+    <footer>
+        <p>Este sitio ha sido creado por: <a href=""> Guillermo Delgado</a></p>
+    </footer>
+
+</body>
+
+</html>
