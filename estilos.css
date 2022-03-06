@@ -235,10 +235,14 @@ aside ul li {
     color: #d3d3d3;
     list-style-type: none;
 }
-
-aside span {
+#asideProducts {
     color: #054756;
     font-weight: bold;
+    text-align: center;
+}
+aside span {
+   color: #054756;
+    font-weight: bold; 
 }
 
 article {
@@ -375,7 +379,6 @@ video {
     column-gap: 1%;
     row-gap: 0;
 }
-
 aside {
     grid-area: lateral;
 }
