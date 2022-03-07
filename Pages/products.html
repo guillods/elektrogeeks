@@ -67,20 +67,18 @@
             </div>
         </section>
     </header>
-    <aside id="asideProducts">
+    <div id="divProducts">
         <br>
         <span> Explora por categorias</span><br>
         <br>
-        <nav>
-            <ul class="flexProductos">
-                <li><a href="category1.html"> Audio </a></li>
-                <li><a href="category2.html"> Video </a></li>
-                <li><a href="category3.html"> Computación </a></li>
-                <li><a href="category4.html"> Videojuegos </a></li>
-                <li><a href="category5.html"> Otros </a></li>
-            </ul>
-        </nav>
-    </aside>
+        <section id="iconCategory" class="flexIconCategory">
+            <a href="../Pages/category1.html"><img src="../Media/audio.svg" alt="icono audio"></a>
+            <a href="../Pages/category2.html"><img src="../Media/video.svg" alt="icono video"></a>
+            <a href="../Pages/category3.html"><img src="../Media/computacion.svg" alt="icono computación"></a>
+            <a href="../Pages/category4.html"><img src="../Media/juegos.svg" alt="icono videojuegos"></a>
+            <a href="../Pages/category5.html"><img src="../Media/otros.svg" alt="icono otros"></a>
+        </section>
+    </dic>
     <main>
         <br><h1>Productos</h1><br>
         <section>
@@ -88,7 +86,7 @@
         </section>
 
         <section>
-            <div>
+            <div class="flexProductos">
                 <img class="imgCategIndiv" src="http://placekitten.com/200/200" alt="imagen1">
                 <img class="imgCategIndiv" src="http://placekitten.com/200/400" alt="imagen1"><img class="imgCategIndiv"
                     src="http://placekitten.com/200/150" alt="imagen1">
@@ -99,7 +97,14 @@
                 <img class="imgCategIndiv" src="http://placekitten.com/200/250" alt="imagen1">
             </div>
         </section>
+
     </main>
+    <nav class="flexMenuFinal">
+        <span><a class="menuInicial" href="../index.html">Inicio</a></span>
+        <span><a class="menuInicial" href="../Pages/products.html">Productos</a></span>
+        <span><a class="menuInicial" href="../Pages/company.html">Nosotros</a></span>
+        <span><a class="menuInicial" href="../Pages/contact.html">Contacto</a></span>
+    </nav>
     <aside id="sidebarMovil">
         <img src="../Media/user.svg" alt="Usuario" class="imgEncabezado">
         <img src="../Media/shopping cart.svg" alt="Carrito de Compras" class="imgEncabezado">

@@ -235,10 +235,11 @@ aside ul li {
     color: #d3d3d3;
     list-style-type: none;
 }
-#asideProducts {
+#divProducts {
     color: #054756;
     font-weight: bold;
     text-align: center;
+
 }
 aside span {
    color: #054756;
@@ -357,6 +358,14 @@ video {
     align-items: flex-start;
     align-content: flex-start;
 }
+.flexCatProductos {
+    height: auto;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: flex-start;
+}
 
 .flexProdButton {
     margin-top: 5px;
@@ -392,6 +401,9 @@ aside {
     display: none;
 }
 #sidebarMovil {
+    display: none;
+}
+.flexMenuFinal {
     display: none;
 }
 
@@ -495,6 +507,10 @@ aside {
     }
     aside img {
         height: 85%;
+    }
+    .flexMenuFinal {
+        display: block;
+        text-align: center;
     }
     #sidebarMovil {
         background-color: #d3d3d3;
