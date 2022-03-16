@@ -7,76 +7,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda en Linea | Elektrogeeks</title>
     <link rel="shortcut icon" href="favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
     <header>
-        <section id="headerNormal">
-            <div class="headerFlexPart1">
-                <span><a href="index.html"><img class="logo" id="Inicio" src="Media/Logo1.png" alt="Logo" /></a></span>
-                <span class="nombreTienda">ELEKTROGEEKS</span>
-                <nav class="flexMenuInicial">
-                    <span><a class="menuInicial" href="index.html">Inicio</a></span>
-                    <span><a class="menuInicial" href="Pages/products.html">Productos</a></span>
-                    <span><a class="menuInicial" href="Pages/company.html">Nosotros</a></span>
-                    <span><a class="menuInicial" href="Pages/contact.html">Contacto</a></span>
-                </nav>
-            </div>
-            <div class="headerFlexPart2">
-                <nav>
-                    <ul class="padre">
-                        <li> <img class="imgMenu" src="Media/Menu.svg" class="active">
-                            <ul class="madre">
-                                <li><a href="Pages/category1.html"> Audio </a></li>
-                                <li><a href="Pages/category2.html"> Video </a></li>
-                                <li><a href="Pages/category3.html"> Computación </a></li>
-                                <li><a href="Pages/category4.html"> Videojuegos </a></li>
-                                <li><a href="Pages/category5.html"> Otros </a></li>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid d-flex justify-content-start">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <img src="Media/Logo1.png" alt="" width="40" class="d-inline-flex align-text-top">
+                    <span class="nombreTienda">ELEKTROGEEKS</span>
+                </a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="categorias">Categorias</span>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                <li><a class="dropdown-item" href="Pages/category1.html">Audio</a></li>
+                                <li><a class="dropdown-item" href="Pages/category2.html">Video</a></li>
+                                <li><a class="dropdown-item" href="Pages/category3.html">Computación</a></li>
+                                <li><a class="dropdown-item" href="Pages/category4.html">Videojuegos</a></li>
+                                <li><a class="dropdown-item" href="Pages/category5.html">Otros</a></li>
                             </ul>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Pages/products.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Pages/company.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Pages/contact.html">Contacto</a>
+                        </li>
                     </ul>
-
-                </nav>
-                <span class="categorias">Categorias</span>
-                <input type="text" name="busqueda" placeholder="Encuentra lo que buscas">
-                <div class="imgFlexencabezado">
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    </form>
+                </div>
+                <div id="headerNormal" class="navbar-brand ms-auto p-2 bd-highlight">
                     <img src="Media/user.svg" alt="Usuario" class="imgEncabezado">
                     <img src="Media/shopping cart.svg" alt="Carrito de Compras" class="imgEncabezado"></div>
             </div>
-        </section>
-        <section id="headerMovil">
-            <div class="headerFlexPart1">
-                <nav>
-                    <ul class="padre">
-                        <li> <img class="imgMenu" src="Media/Menu.svg" class="active">
-                            <ul class="madre">
-                                <li><a href="Pages/category1.html"> Audio </a></li>
-                                <li><a href="Pages/category2.html"> Video </a></li>
-                                <li><a href="Pages/category3.html"> Computación </a></li>
-                                <li><a href="Pages/category4.html"> Videojuegos </a></li>
-                                <li><a href="Pages/category5.html"> Otros </a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-                <input type="text" name="busqueda" placeholder="Encuentra lo que buscas">
-                <span><a href="index.html"><img class="logo" id="Inicio" src="Media/Logo1.png" alt="Logo" /></a></span>
             </div>
-        </section>
+        </nav>
     </header>
     <hr>
     <main>
         <article>
             <section>
                 <!--CoverFLow-->
-                <div class="coverflow flexCoverFlow">
-                    <img class="imgCoverflow" src="Media/producto1.png" alt="Dron">
-                    <img class="imgCoverflow" src="Media/producto2.png" alt="Earbuds">
-                    <img class="imgCoverflow" src="Media/producto3.png" alt="Audifonos">
-                    <img class="imgCoverflow" src="Media/producto4.png" alt="Mando">
-                    <img class="imgCoverflow" src="Media/producto5.png" alt="Parlante">
+
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://placekitten.com/1450/300" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://placekitten.com/1450/300" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://placekitten.com/1450/300" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
+
             </section>
             <br>
             <section id="iconCategory" class="flexIconCategory">
@@ -137,6 +158,13 @@
         <img src="Media/user.svg" alt="Usuario" class="imgEncabezado">
         <img src="Media/shopping cart.svg" alt="Carrito de Compras" class="imgEncabezado">
     </aside>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+    </script>
 </body>
 <hr>
 <footer>

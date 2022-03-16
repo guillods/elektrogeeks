@@ -24,19 +24,17 @@ footer {
     height: 5vh;
 }
 
-.menuInicial {
-    font-family: sans-serif;
-    font-size: small;
+.nav-link {
+
     color: #054756;
-    text-decoration: none;
-    padding: 0 2px;
+
 }
 
 .nombreTienda {
     margin-left: 3%;
     color: #8cbb51;
     font-weight: bold;
-    font-size: 150%;
+    font-size: 100%;
     font-family: neuropol_x;
 }
 
@@ -50,7 +48,8 @@ header input {
 }
 
 .imgEncabezado {
-    width: 40px;
+    width: 3vw;
+    min-width: 35px;
     padding: 0 5px 5px 0;
 }
 
@@ -66,7 +65,7 @@ header input {
     font-family: neuropol_x;
 }
 
-/* Menu Categorias*/
+/* Menu Categorias*//*
 .padre li {
     display: inline-block;
     position: relative;
@@ -100,7 +99,7 @@ li ul li:hover {
     background-color: #6bb15a;
     color: #054756;
 
-}
+}*/
 
 
 /* Menu Categorias*/
@@ -109,14 +108,8 @@ li ul li:hover {
     padding: 10px 0 10px 0;
 }
 
-.imgCoverflow {
-    width: 18vw;
-}
-
-.imgCoverflow:hover {
-    width: 20vw;
-    border: solid 3px #8cbb51;
-    border-radius: 17%;
+.carousel-inner {
+    width: 100%;
 }
 
 #iconCategory {
@@ -219,13 +212,12 @@ h5 {
 }
 
 #form {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: left;
-    color: #054756;
-    padding: 10px;
+    color: #054756;   
 }
-
-
+#form-movil{
+    display: none;
+}
+/*
 aside ul li {
     width: 100px;
     height: 25px;
@@ -235,7 +227,7 @@ aside ul li {
     padding: 5px;
     color: #d3d3d3;
     list-style-type: none;
-}
+}*/
 
 #divProducts {
     color: #054756;
@@ -308,13 +300,6 @@ video {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-}
-
-.flexCoverFlow {
-
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
 }
 
 .flexIconCategory {
@@ -414,7 +399,7 @@ aside {
 }
 
 /* TABLET */
-@media (min-width: 481px) and (max-width: 1023px) {
+@media (min-width: 521px) and (max-width: 1023px) {
     #gridAreas {
         display: grid;
         /* 3 columnas y 4 filas */
@@ -440,7 +425,7 @@ aside {
 }
 
 /* SMARTPHONE */
-@media (max-width: 480px) {
+@media (max-width: 520px) {
 
     /* GRID por AREAS */
     #gridAreas {
@@ -514,7 +499,6 @@ aside {
     }
 
     #headerMovil {
-        width: 100%;
         display: block;
     }
 
@@ -526,7 +510,7 @@ aside {
         display: block;
         text-align: center;
     }
-
+    
     #sidebarMovil {
         background-color: #d3d3d3;
         display: flex;
@@ -537,6 +521,12 @@ aside {
         width: 100%;
         bottom: 0;
         position: sticky;
+    }
+    #form {
+        display: none;
+    }
+    #form-movil {
+        display: block;
     }
 
 }
@@ -550,12 +540,7 @@ aside {
     animation-delay: 0;
 }
 
-.imgCoverflow {
-    animation-name: imgCoverAnima;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-    animation-delay: 0;
-}
+
 
 @keyframes imgRefAnima {
     from/* inicio */{
@@ -566,12 +551,4 @@ aside {
         
     }
 }
-@keyframes imgCoverAnima {
-    from/* inicio */{
-        transform: scale(1.3);
-        margin-top: 20px;
-    }
-    to/* fin */{
-        
-    }
-}
+
