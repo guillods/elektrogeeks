@@ -19,11 +19,13 @@ body {
     background-image: url("./Media/Background.jpg");
     background-attachment: fixed
 }
-
 footer {
-    height: 5vh;
+    height: 5hv;
 }
-
+.container {
+    margin: 0;
+    width: auto;
+}
 .nav-link {
 
     color: #054756;
@@ -64,6 +66,8 @@ header input {
     font-size: 100%;
     font-family: neuropol_x;
 }
+
+
 
 /* Menu Categorias*//*
 .padre li {
@@ -134,11 +138,16 @@ li ul li:hover {
     width: 20vw;
     border: transparent 2px;
 }
+#cont-largeCategory {
+    width: 95vw;
+    display: flex;
+    justify-content: center;
+}
 
 #imgLargeCategory {
     border: solid 2px #8cbb51;
     border-radius: 10px;
-    width: 99%;
+    width: 98%;
 }
 
 .aside {
@@ -155,8 +164,11 @@ button {
 }
 
 .imgCategIndiv {
-    padding: 10px;
-    width: 17vw;
+    border: solid 2px #8cbb51;
+    border-radius: 5px;
+    margin: 5px;
+    width: 20vw;
+    max-width: 150px;
 }
 
 .segundoTitulo {
@@ -170,7 +182,7 @@ button {
 
 .imgLarge {
     width: 97%;
-    border-radius: 10%;
+    border-radius: 5%;
     padding: 1%;
     margin: 0;
 }
@@ -186,7 +198,7 @@ button {
 
 .imgPagos {
     width: 10%;
-    max-width: 100px;
+    max-width: 80px;
 }
 
 
@@ -360,6 +372,9 @@ video {
     margin-top: 5px;
     display: flex;
     flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
 /* GRID por AREAS */
@@ -394,9 +409,6 @@ aside {
     display: none;
 }
 
-.flexMenuFinal {
-    display: none;
-}
 
 /* TABLET */
 @media (min-width: 521px) and (max-width: 1023px) {
@@ -411,11 +423,7 @@ aside {
         grid-template-columns: 1fr 5fr;
         column-gap: 1%;
         row-gap: 0;
-    }
-
-    .imgCategIndiv {
-        min-width: 150px;
-    }
+    } 
 
     iframe {
         max-width: 560px;
@@ -454,10 +462,6 @@ aside {
         width: 15vw;
     }
 
-    footer {
-        display: none;
-    }
-
     .categorias {
         display: none;
     }
@@ -475,13 +479,6 @@ aside {
         width: 100%;
     }
 
-    .imgCategIndiv {
-        min-width: 150px;
-    }
-
-    .flexMenuInicial {
-        display: none;
-    }
 
     .flexProdButton {
         min-width: 50%;
@@ -505,11 +502,6 @@ aside {
     aside img {
         height: 85%;
     }
-
-    .flexMenuFinal {
-        display: block;
-        text-align: center;
-    }
     
     #sidebarMovil {
         background-color: #d3d3d3;
@@ -528,6 +520,11 @@ aside {
     #form-movil {
         display: block;
     }
+    footer {
+        background-color: aqua;
+        position: fixed;
+        visibility: hidden;
+    }
 
 }
 
@@ -539,8 +536,6 @@ aside {
     animation-iteration-count: 1;
     animation-delay: 0;
 }
-
-
 
 @keyframes imgRefAnima {
     from/* inicio */{
