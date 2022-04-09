@@ -1,0 +1,19 @@
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "neuropol_x";
+    src: url("neuropol_x.ttf");
+}
+
+$font: neuropol_x;
+$font-dos: Verdana,
+Geneva,
+Tahoma,
+sans-serif;
+$color-base: #f8f9fa;
+$color-uno: #054756;
+$color-dos: #8cbb51;

@@ -23,12 +23,12 @@
                 </button>
                 <a class="navbar-brand" href="index.html">
                     <img src="Media/Logo1.png" alt="" width="40" class="d-inline-flex align-text-top">
-                    <span class="nombreTienda">ELEKTROGEEKS</span>
+                    <span class="nombre-tienda">ELEKTROGEEKS</span>
                 </a>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                            <a class="nav-link  dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 <span class="categorias">Categorias</span>
                             </a>
@@ -41,13 +41,13 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Pages/products.html">Productos</a>
+                            <a class="nav-link " href="Pages/products.html">Productos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Pages/company.html">Nosotros</a>
+                            <a class="nav-link " href="Pages/company.html">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Pages/contact.html">Contacto</a>
+                            <a class="nav-link " href="Pages/contact.html">Contacto</a>
                         </li>
                     </ul>
                     <form class="d-flex">
@@ -55,8 +55,9 @@
                     </form>
                 </div>
                 <div id="headerNormal" class="navbar-brand ms-auto p-2 bd-highlight">
-                    <img src="Media/user.svg" alt="Usuario" class="imgEncabezado">
-                    <img src="Media/shopping cart.svg" alt="Carrito de Compras" class="imgEncabezado"></div>
+                    <a href="#"><img src="Media/user.svg" alt="Usuario" class="icon-header"></a>
+                    <a href="#"><img src="Media/shopping cart.svg" alt="Carrito de Compras" class="icon-header"></a>
+                </div>
             </div>
             </div>
         </nav>
@@ -66,7 +67,6 @@
         <article>
             <section>
                 <!--CoverFLow-->
-
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
@@ -78,13 +78,13 @@
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="https://placekitten.com/1450/300" class="d-block w-100" alt="...">
+                            <a href=""><img src="Media/Slider1.jpg" class="img-slider d-block w-100 rounded" alt="..."></a>
                         </div>
                         <div class="carousel-item">
-                            <img src="https://placekitten.com/1450/300" class="d-block w-100" alt="...">
+                            <a href=""><img src="Media/Slider2.jpg" class="img-slider d-block w-100 rounded" alt="..."></a>
                         </div>
                         <div class="carousel-item">
-                            <img src="https://placekitten.com/1450/300" class="d-block w-100" alt="...">
+                            <a href=""><img src="Media/Slider3.jpg" class="img-slider d-block w-100 rounded" alt="..."></a>
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -98,60 +98,116 @@
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
-
             </section>
-            <br>
-            <section id="iconCategory" class="flexIconCategory">
+            <section class="icon-category icon-category__flex">
                 <a href="Pages/category1.html"><img src="Media/audio.svg" alt="icono audio"></a>
                 <a href="Pages/category2.html"><img src="Media/video.svg" alt="icono video"></a>
                 <a href="Pages/category3.html"><img src="Media/computacion.svg" alt="icono computación"></a>
                 <a href="Pages/category4.html"><img src="Media/juegos.svg" alt="icono videojuegos"></a>
                 <a href="Pages/category5.html"><img src="Media/otros.svg" alt="icono otros"></a>
             </section>
-            <section class="galeriaFlex">
-                <img class="imgsReference" src="https://placekitten.com/250/300" class="imgsReference" alt="gatito">
-                <img class="imgsReference" src="https://placekitten.com/250/300" alt="gatito">
-                <img class="imgsReference" src="https://placekitten.com/250/300" alt="gatito">
-                <img class="imgsReference" src="https://placekitten.com/250/300" alt="gatito">
-
-            </section>
             <section>
-                <h3 class="segundoTitulo">Nuestro producto más vendido</h3>
                 <div>
-                    <img class="imgLarge" src="Media/ProductoEstrella.jpg" alt="Barra de Sonido">
+                    <h2 class="h3 pt-4">Featured Products</h2>
                 </div>
-            </section>
-
-            <section>
-                <h3 class="segundoTitulo">Da un vistaso a nuestros mejores productos</h3>
-                <div class="flexIframe">
-                    <div class="delimitadorVideo">
-                        <div class="contenedorVideo">
-                            <iframe class="iframeIndex" src="https://www.youtube.com/embed/5K1krDvGP3c"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                <div id="carouselExampleFade" class="pb-2 carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active container-fluid" data-bs-interval="10000">
+                            <div class="featured-carousel">
+                                <div class="">
+                                    <a href="#"><img class="shadow rounded"
+                                        src="Media/FeaturedProduct1.jpeg" alt="Producto"></a>
+                                </div>
+                                <div class="">
+                                    <a href="#"><img class="shadow rounded"
+                                        src="Media/FeaturedProduct2.jpeg" alt="Producto"></a>>
+                                </div>
+                                <div class="">
+                                    <a href="#"><img class="shadow rounded"
+                                        src="Media/FeaturedProduct3.jpeg" alt="Producto"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="10000">
+                            <dic class="featured-carousel">
+                                <div class="">
+                                    <a href="#"><img class="shadow rounded"
+                                        src="Media/FeaturedProduct4.jpeg" alt="Producto"></a>
+                                </div>
+                                <div class="">
+                                    <a href="#"><img class="shadow rounded"
+                                        src="Media/FeaturedProduct5.jpeg" alt="Producto"></a>
+                                </div>
+                                <div class="">
+                                    <a href="#"><img class="shadow rounded"
+                                        src="Media/FeaturedProduct6.jpeg" alt="Producto"></a>
+                                </div>
+                            </dic>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="10000">
+                            <dic class="featured-carousel">
+                                <div class="">
+                                    <a href="#"><img class="shadow rounded"
+                                        src="Media/FeaturedProduct7.jpeg" alt="Producto"></a>
+                                </div>
+                                <div class="">
+                                    <a href="#"><img class="shadow rounded"
+                                        src="Media/FeaturedProduct8.jpeg" alt="Producto"></a>
+                                </div>
+                                <div class="">
+                                    <a href="#"><img class="shadow rounded"
+                                        src="Media/FeaturedProduct9.jpeg" alt="Producto"></a>
+                                </div>
+                            </dic>
                         </div>
                     </div>
-                    <video controls src="Media/Video1.mp4"></video>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </section>
             <section>
-                <h4 class="tercerTitulo">Pagos aceptados</h4>
-                <div class="pagosFlex">
-                    <img class="imgPagos" src="Media/pago1.png" alt="Visa">
-                    <img class="imgPagos" src="Media/pago2.png" alt="Master">
-                    <img class="imgPagos" src="Media/pago3.png" alt="Diners">
-                    <img class="imgPagos" src="Media/pago4.png" alt="American">
-                    <img class="imgPagos" src="Media/pago5.png" alt="Paypal">
-                    <img class="imgPagos" src="Media/pago6.png" alt="PayU">
+                <div>
+                    <h2 class="h4 pt-4">Big Sale!</h2>
+                </div>
+                <div class="card p-1 mb-2 bg-light">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <img src="Media/ProductoEstrella.jpg" class="img-fluid rounded" alt="Barra de Sonido">
+                        </div>
+                        <div class="col-md-4 d-flex align-items-center justify-content-center">
+                            <div class="d-flex flex-column align-items-center">
+                                <h5 class="card-title">Entertainment is onn.</h5>
+                                <p class="card-text">Thoughtfully designed tech to stream, play, & more.</p>
+                                <a href="#" class="btn btn-outline-success"> Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="h5 pt-2">Pagos aceptados</h3>
+                </div>
+                <div class="pagos">
+                    <img class="pagos__img" src="Media/pago1.png" alt="Visa">
+                    <img class="pagos__img" src="Media/pago2.png" alt="Master">
+                    <img class="pagos__img" src="Media/pago3.png" alt="Diners">
+                    <img class="pagos__img" src="Media/pago4.png" alt="American">
+                    <img class="pagos__img" src="Media/pago5.png" alt="Paypal">
+                    <img class="pagos__img" src="Media/pago6.png" alt="PayU">
                 </div>
             </section>
         </article>
     </main>
     <aside id="sidebarMovil">
-        <img src="Media/user.svg" alt="Usuario" class="imgEncabezado">
-        <img src="Media/shopping cart.svg" alt="Carrito de Compras" class="imgEncabezado">
+        <img src="Media/user.svg" alt="Usuario" class="icon-header">
+        <img src="Media/shopping cart.svg" alt="Carrito de Compras" class="icon-header">
     </aside>
 
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -168,14 +224,14 @@
                 d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
         </symbol>
     </svg>
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top container">
+    <footer class="d-flex flex-wrap justify-content-between py-2 my-2 border-top container-fluid">
         <div class="col-md-4 d-flex align-items-center">
             <a href="#Inicio" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
                 <img class="bi" width="30" height="24" src="Media/Logo1.png" alt="">
             </a>
             <span class="text-muted">&copy; 2022 ELEKTROGEEKS</span>
         </div>
-    
+
         <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
             <li class="ms-3"><a class="text-muted" target="_blank" href="#"><svg class="bi" width="24" height="24">
                         <use xlink:href="#twitter" /></svg></a></li>
@@ -194,4 +250,5 @@
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
     </script>
 </body>
+
 </html>

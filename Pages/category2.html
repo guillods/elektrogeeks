@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="Inicio">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid d-flex justify-content-start">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -23,12 +23,12 @@
                 </button>
                 <a class="navbar-brand" href="../index.html">
                     <img src="../Media/Logo1.png" alt="" width="40" class="d-inline-flex align-text-top">
-                    <span class="nombreTienda">ELEKTROGEEKS</span>
+                    <span class="nombre-tienda">ELEKTROGEEKS</span>
                 </a>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                            <a class="nav-link  dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 <span class="categorias">Categorias</span>
                             </a>
@@ -41,13 +41,13 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="products.html">Productos</a>
+                            <a class="nav-link " href="products.html">Productos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="company.html">Nosotros</a>
+                            <a class="nav-link " href="company.html">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contacto</a>
+                            <a class="nav-link " href="contact.html">Contacto</a>
                         </li>
                     </ul>
                     <form class="d-flex">
@@ -55,155 +55,237 @@
                     </form>
                 </div>
                 <div id="headerNormal" class="navbar-brand ms-auto p-2 bd-highlight">
-                    <img src="../Media/user.svg" alt="Usuario" class="imgEncabezado">
-                    <img src="../Media/shopping cart.svg" alt="Carrito de Compras" class="imgEncabezado"></div>
+                    <a href="#"><img src="../Media/user.svg" alt="Usuario" class="icon-header"></a>
+                    <a href="#"><img src="../Media/shopping cart.svg" alt="Carrito de Compras"
+                            class="icon-header"></a>
+                </div>
             </div>
             </div>
         </nav>
     </header>
-
+    <br>
     <main>
-        <br>
-        <h1>Video</h1><br>
+        <h2 class="h2 py-2">Video</h2>
         <div class="container-fluid">
             <div class="row">
-              <div class="col-3 p-1">
-                <aside class="aside">
-                    <div>Filtrar por:</div><br>
-                    <p>Filtro 1</p>
-                    <input type="checkbox" name="opcion1" value="1">
-                    <label for="opcion1"> Opción 1 </label><br>
-                    <input type="checkbox" name="opcion2" value="1">
-                    <label for="opcion2"> Opción 2 </label><br>
-                    <input type="checkbox" name="opcion3" value="1">
-                    <label for="opcion3"> Opción 3 </label><br>
-                    <input type="checkbox" name="opcion4" value="1">
-                    <label for="opcion4"> Opción 4 </label><br>
-                    <p>Filtro 2</p>
-                    <p>Filtro 3</p>
-                    <label for="precio"> Escoge precio entre 50 y 100</label><br>
-                    <input type="range" name="precio" min="50" max="100">
-                    <p>Filtro 4</p>
-                    <button>Filtrar</button>
-                </aside>
-              </div>
-              <div class="col-9 p-1">
-                <div class="container-fluid">
-                    <div class="row">
-                      <div class="col">
-                        <picture>
-                            <img id="imgLargeCategory" src="http://placekitten.com/1100/250" alt="imagen1">
-                        </picture>
-                      </div>
+                <div id="asideNormal" class="col-3 p-1">
+                    <aside class="aside-category">
+                        <div>Filtrar por:</div><br>
+                        <p>Filtro 1</p>
+                        <input class="form-check-input" type="checkbox" name="opcion1" value="1">
+                        <label for="opcion1"> Opción 1 </label><br>
+                        <input class="form-check-input" type="checkbox" name="opcion2" value="1">
+                        <label for="opcion2"> Opción 2 </label><br>
+                        <input class="form-check-input" type="checkbox" name="opcion3" value="1">
+                        <label for="opcion3"> Opción 3 </label><br>
+                        <input class="form-check-input" type="checkbox" name="opcion4" value="1">
+                        <label for="opcion4"> Opción 4 </label><br>
+                        <p>Filtro 2</p>
+                        <p>Filtro 3</p>
+                        <label for="precio"> Escoge precio entre 50 y 100</label><br>
+                        <input class="form-range" type="range" name="precio" min="50" max="100">
+                        <p>Filtro 4</p>
+                        <button type="button" class="btn btn-outline-secondary">Filtrar</button>
+                    </aside>
+                </div>
+                <div id="container-category-normal" class="col-9 p-1">
+                    <div class="container-fluid">
+                        <div class="row justify-content-around">
+                            <div class="p-1 card col-auto">
+                                <picture>
+                                    <a href="#"><img src="../Media/banner_video.jpg" class="rounded img-fluid img-banner"
+                                            alt="imagen1"></a>
+                                </picture>
+                            </div>
+                            <div class="p-2 m-2 col-auto card">
+                                <a href="#"><img src="http://placekitten.com/200/250"
+                                        class="card-img-top rounded img-fluid" alt="..."></a>
+                                <div class="d-grid card-body">
+                                    <a href="#" class="btn btn-outline-success"> Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="p-2 m-2 col-auto card">
+                                <a href="#"><img src="http://placekitten.com/200/250"
+                                        class="card-img-top rounded img-fluid" alt="..."></a>
+                                <div class="d-grid card-body">
+                                    <a href="#" class="btn btn-outline-success"> Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="p-2 m-2 col-auto card">
+                                <a href="#"><img src="http://placekitten.com/200/250"
+                                        class="card-img-top rounded img-fluid" alt="..."></a>
+                                <div class="d-grid card-body">
+                                    <a href="#" class="btn btn-outline-success"> Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="p-2 m-2 col-auto card">
+                                <a href="#"><img src="http://placekitten.com/200/250"
+                                        class="card-img-top rounded img-fluid" alt="..."></a>
+                                <div class="d-grid card-body">
+                                    <a href="#" class="btn btn-outline-success"> Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="p-2 m-2 col-auto card">
+                                <a href="#"><img src="http://placekitten.com/200/250"
+                                        class="card-img-top rounded img-fluid" alt="..."></a>
+                                <div class="d-grid card-body">
+                                    <a href="#" class="btn btn-outline-success"> Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="p-2 m-2 col-auto card">
+                                <a href="#"><img src="http://placekitten.com/200/250"
+                                        class="card-img-top rounded img-fluid" alt="..."></a>
+                                <div class="d-grid card-body">
+                                    <a href="#" class="btn btn-outline-success"> Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="p-2 m-2 col-auto card">
+                                <a href="#"><img src="http://placekitten.com/200/250"
+                                        class="card-img-top rounded img-fluid" alt="..."></a>
+                                <div class="d-grid card-body">
+                                    <a href="#" class="btn btn-outline-success"> Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="p-2 m-2 col-auto card">
+                                <a href="#"><img src="http://placekitten.com/200/250"
+                                        class="card-img-top rounded img-fluid" alt="..."></a>
+                                <div class="d-grid card-body">
+                                    <a href="#" class="btn btn-outline-success"> Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="p-2 m-2 col-auto card">
+                                <a href="#"><img src="http://placekitten.com/200/250"
+                                        class="card-img-top rounded img-fluid" alt="..."></a>
+                                <div class="d-grid card-body">
+                                    <a href="#" class="btn btn-outline-success"> Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="p-2 m-2 col-auto card">
+                                <a href="#"><img src="http://placekitten.com/200/250"
+                                        class="card-img-top rounded img-fluid" alt="..."></a>
+                                <div class="d-grid card-body">
+                                    <a href="#" class="btn btn-outline-success"> Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="p-2 m-2 col-auto card">
+                                <a href="#"><img src="http://placekitten.com/200/250"
+                                        class="card-img-top rounded img-fluid" alt="..."></a>
+                                <div class="d-grid card-body">
+                                    <a href="#" class="btn btn-outline-success"> Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="p-2 m-2 col-auto card">
+                                <a href="#"><img src="http://placekitten.com/200/250"
+                                        class="card-img-top rounded img-fluid" alt="..."></a>
+                                <div class="d-grid card-body">
+                                    <a href="#" class="btn btn-outline-success"> Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="row">
-                      <div class="col">
-                        <div class="flexProdButton">
-                            <img class="imgCategIndiv" src="http://placekitten.com/200/250" alt="imagen1">
-                            <button class="btn btn-secondary btn-sm" type="button">Comprar</button></div>
-                      </div>
-                      <div class="col">
-                        <div class="flexProdButton">
-                            <img class="imgCategIndiv" src="http://placekitten.com/200/250" alt="imagen1">
-                            <button class="btn btn-secondary btn-sm" type="button">Comprar</button></div>
-                      </div>
-                      <div class="col">
-                        <div class="flexProdButton">
-                            <img class="imgCategIndiv" src="http://placekitten.com/200/250" alt="imagen1">
-                            <button class="btn btn-secondary btn-sm" type="button">Comprar</button></div>
-                      </div>
-                      <div class="col">
-                        <div class="flexProdButton">
-                            <img class="imgCategIndiv" src="http://placekitten.com/200/250" alt="imagen1">
-                            <button class="btn btn-secondary btn-sm" type="button">Comprar</button></div>
-                      </div>
-                      <div class="col">
-                        <div class="flexProdButton">
-                            <img class="imgCategIndiv" src="http://placekitten.com/200/250" alt="imagen1">
-                            <button class="btn btn-secondary btn-sm" type="button">Comprar</button></div>
-                      </div>
-                      <div class="col">
-                        <div class="flexProdButton">
-                            <img class="imgCategIndiv" src="http://placekitten.com/200/250" alt="imagen1">
-                            <button class="btn btn-secondary btn-sm" type="button">Comprar</button></div>
-                      </div>
-                      <div class="col">
-                        <div class="flexProdButton">
-                            <img class="imgCategIndiv" src="http://placekitten.com/200/250" alt="imagen1">
-                            <button class="btn btn-secondary btn-sm" type="button">Comprar</button></div>
-                      </div>
-                      <div class="col">
-                        <div class="flexProdButton">
-                            <img class="imgCategIndiv" src="http://placekitten.com/200/250" alt="imagen1">
-                            <button class="btn btn-secondary btn-sm" type="button">Comprar</button></div>
-                      </div>
-                  </div>
-              </div>
-            </div>
-          </div>
-        <!-- <div id="gridAreas">
-            <div>
-                <aside class="aside">
-                    <div>Filtrar por:</div><br>
-                    <p>Filtro 1</p>
-                    <input type="checkbox" name="opcion1" value="1">
-                    <label for="opcion1"> Opción 1 </label><br>
-                    <input type="checkbox" name="opcion2" value="1">
-                    <label for="opcion2"> Opción 2 </label><br>
-                    <input type="checkbox" name="opcion3" value="1">
-                    <label for="opcion3"> Opción 3 </label><br>
-                    <input type="checkbox" name="opcion4" value="1">
-                    <label for="opcion4"> Opción 4 </label><br>
-                    <p>Filtro 2</p>
-                    <p>Filtro 3</p>
-                    <label for="precio"> Escoge precio entre 50 y 100</label><br>
-                    <input type="range" name="precio" min="50" max="100">
-                    <p>Filtro 4</p>
-                    <button>Filtrar</button>
-                </aside>
-            </div>
-            <div id="gridContenido">
-                <picture>
-                    <img id="imgLargeCategory" src="http://placekitten.com/1200/250" alt="imagen1">
-                </picture>
-                <br>
-                <hr>
-                <section id="gridProductos">
-                    <div class="flexProductos">
-                        <div class="flexProdButton">
-                            <img class="imgCategIndiv" src="http://placekitten.com/200/250" alt="imagen1">
-                            <button type="button">Comprar</button></div>
-                        <div class="flexProdButton">
-                            <img class="imgCategIndiv" src="http://placekitten.com/200/250" alt="imagen1">
-                            <button type="button">Comprar</button></div>
-                        <div class="flexProdButton">
-                            <img class="imgCategIndiv" src="http://placekitten.com/200/250" alt="imagen1">
-                            <button type="button">Comprar</button></div>
-                        <div class="flexProdButton">
-                            <img class="imgCategIndiv" src="http://placekitten.com/200/250" alt="imagen1">
-                            <button type="button">Comprar</button></div>
-                        <div class="flexProdButton">
-                            <img class="imgCategIndiv" src="http://placekitten.com/200/250" alt="imagen1">
-                            <button type="button">Comprar</button></div>
-                        <div class="flexProdButton">
-                            <img class="imgCategIndiv" src="http://placekitten.com/200/250" alt="imagen1">
-                            <button type="button">Comprar</button></div>
-                        <div class="flexProdButton">
-                            <img class="imgCategIndiv" src="http://placekitten.com/200/250" alt="imagen1">
-                            <button type="button">Comprar</button></div>
-                        <div class="flexProdButton">
-                            <img class="imgCategIndiv" src="http://placekitten.com/200/250" alt="imagen1">
-                            <button type="button">Comprar</button></div>
+                </div>
+                <div id="container-category-movil" class="col p-1">
+                    <div class="container-fluid">
+                        <div class="row justify-content-around">
+                            <div class="p-1 card col-auto">
+                                <picture>
+                                    <a href="#"><img src="../Media/banner_video.jpg" class="rounded img-fluid img-banner"
+                                        alt="imagen1"></a>
+                                </picture>
+                            </div>
+                            <div class="p-2 m-2 col-auto card">
+                                <a href="#"><img src="http://placekitten.com/200/250"
+                                        class="card-img-top rounded img-fluid" alt="..."></a>
+                                <div class="d-grid card-body">
+                                    <a href="#" class="btn btn-outline-success"> Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="p-2 m-2 col-auto card">
+                                <a href="#"><img src="http://placekitten.com/200/250"
+                                        class="card-img-top rounded img-fluid" alt="..."></a>
+                                <div class="d-grid card-body">
+                                    <a href="#" class="btn btn-outline-success"> Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="p-2 m-2 col-auto card">
+                                <a href="#"><img src="http://placekitten.com/200/250"
+                                        class="card-img-top rounded img-fluid" alt="..."></a>
+                                <div class="d-grid card-body">
+                                    <a href="#" class="btn btn-outline-success"> Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="p-2 m-2 col-auto card">
+                                <a href="#"><img src="http://placekitten.com/200/250"
+                                        class="card-img-top rounded img-fluid" alt="..."></a>
+                                <div class="d-grid card-body">
+                                    <a href="#" class="btn btn-outline-success"> Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="p-2 m-2 col-auto card">
+                                <a href="#"><img src="http://placekitten.com/200/250"
+                                        class="card-img-top rounded img-fluid" alt="..."></a>
+                                <div class="d-grid card-body">
+                                    <a href="#" class="btn btn-outline-success"> Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="p-2 m-2 col-auto card">
+                                <a href="#"><img src="http://placekitten.com/200/250"
+                                        class="card-img-top rounded img-fluid" alt="..."></a>
+                                <div class="d-grid card-body">
+                                    <a href="#" class="btn btn-outline-success"> Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="p-2 m-2 col-auto card">
+                                <a href="#"><img src="http://placekitten.com/200/250"
+                                        class="card-img-top rounded img-fluid" alt="..."></a>
+                                <div class="d-grid card-body">
+                                    <a href="#" class="btn btn-outline-success"> Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="p-2 m-2 col-auto card">
+                                <a href="#"><img src="http://placekitten.com/200/250"
+                                        class="card-img-top rounded img-fluid" alt="..."></a>
+                                <div class="d-grid card-body">
+                                    <a href="#" class="btn btn-outline-success"> Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="p-2 m-2 col-auto card">
+                                <a href="#"><img src="http://placekitten.com/200/250"
+                                        class="card-img-top rounded img-fluid" alt="..."></a>
+                                <div class="d-grid card-body">
+                                    <a href="#" class="btn btn-outline-success"> Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="p-2 m-2 col-auto card">
+                                <a href="#"><img src="http://placekitten.com/200/250"
+                                        class="card-img-top rounded img-fluid" alt="..."></a>
+                                <div class="d-grid card-body">
+                                    <a href="#" class="btn btn-outline-success"> Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="p-2 m-2 col-auto card">
+                                <a href="#"><img src="http://placekitten.com/200/250"
+                                        class="card-img-top rounded img-fluid" alt="..."></a>
+                                <div class="d-grid card-body">
+                                    <a href="#" class="btn btn-outline-success"> Add to cart</a>
+                                </div>
+                            </div>
+                            <div class="p-2 m-2 col-auto card">
+                                <a href="#"><img src="http://placekitten.com/200/250"
+                                        class="card-img-top rounded img-fluid" alt="..."></a>
+                                <div class="d-grid card-body">
+                                    <a href="#" class="btn btn-outline-success"> Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </section>
+                </div>
             </div>
-        </div> -->
     </main>
     <aside id="sidebarMovil">
-        <img src="../Media/user.svg" alt="Usuario" class="imgEncabezado">
-        <img src="../Media/shopping cart.svg" alt="Carrito de Compras" class="imgEncabezado">
+        <img src="../Media/user.svg" alt="Usuario" class="icon-header">
+        <img src="../Media/shopping cart.svg" alt="Carrito de Compras" class="icon-header">
     </aside>
-
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
         <symbol id="facebook" viewBox="0 0 16 16">
             <path
@@ -218,14 +300,14 @@
                 d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
         </symbol>
     </svg>
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top container">
+    <footer class="d-flex flex-wrap justify-content-between py-2 my-2 border-top container-fluid">
         <div class="col-md-4 d-flex align-items-center">
             <a href="#Inicio" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
                 <img class="bi" width="30" height="24" src="../Media/Logo1.png" alt="">
             </a>
             <span class="text-muted">&copy; 2022 ELEKTROGEEKS</span>
         </div>
-    
+
         <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
             <li class="ms-3"><a class="text-muted" target="_blank" href="#"><svg class="bi" width="24" height="24">
                         <use xlink:href="#twitter" /></svg></a></li>
@@ -236,7 +318,6 @@
                         <use xlink:href="#facebook" /></svg></a></li>
         </ul>
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
     </script>
@@ -244,4 +325,5 @@
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
     </script>
 </body>
+
 </html>
